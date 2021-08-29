@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Sunday Fortune",
+      "email": "iriemena@yahoo.com",
+      "phone": "07063638452"
+    },
+    {
+      "id": 2,
+      "name": "Chinenye Okpara",
+      "email": "rechycheal@gmail.com",
+      "phone": "08066884107"
+    }
+  ]
+}
