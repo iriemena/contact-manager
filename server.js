@@ -21,7 +21,10 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.MONGODB_URI;
-mongoose.connect(uri, { useNewUrlParser: true });
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 mongoose.connection.once("open", () => {
   console.log("MongoDB connected...");
