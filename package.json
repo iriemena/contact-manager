@@ -9,7 +9,7 @@
     "node": "16.4.0"
   },
   "scripts": {
-   "client": "cd client && npm start",
+  "client": "cd client && npm start",
   "start": "node server.js",
   "build": "cd client && npm install && npm run build",
   "dev": "concurrently \"npm run client\" \"nodemon\""

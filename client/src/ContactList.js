@@ -101,7 +101,7 @@ function ContactList({ contacts, deleteContact, search, getSearch }) {
                     <Delete
                       style={{
                         color: "red",
-                        marginLeft: "15px",
+                        // marginLeft: "15px",
                         marginTop: "20px",
                       }}
                       onClick={() => deleteContact(contact._id)}

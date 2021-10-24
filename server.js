@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
-// const dotenv = require("dotenv");
+const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const User = require("./model/user");
-require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
 
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
@@ -15,7 +15,7 @@ app.use((req, res, next) => {
   next();
 });
 
-console.log(process.env.MONGODB_URI);
+// console.log(process.env.MONGODB_URI);
 
 app.use(express.json());
 app.use(cors());
