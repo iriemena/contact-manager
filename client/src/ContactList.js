@@ -14,7 +14,7 @@ const useStyle = makeStyles({
   btn: {
     position: "fixed",
     bottom: 10,
-    right: 170,
+    marginLeft: "50%",
     borderRadius: 50,
   },
   link: {
@@ -59,7 +59,9 @@ function ContactList({ contacts, deleteContact, search, getSearch }) {
         <br />
         Contact List
       </Typography>
-
+      <Typography style={{ fontSize: "12px" }}>
+        Click on any of the contacts to see more.
+      </Typography>
       <br />
       {contacts.length < 1
         ? "No contact is available"
@@ -81,7 +83,7 @@ function ContactList({ contacts, deleteContact, search, getSearch }) {
                       </Avatar>
                     }
                     title={contact.name}
-                    subheader={contact.email}
+                    subheader={contact.phone}
                   />
                 </Link>
 
