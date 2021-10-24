@@ -76,7 +76,6 @@ function AddContact({ addContact }) {
 
       <TextField
         required
-        type="number"
         fullWidth
         className={classes.field}
         variant="outlined"
